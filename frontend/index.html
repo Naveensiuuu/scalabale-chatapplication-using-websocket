@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudChat | Real-Time Messaging</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CloudChat</h1>
+            <div id="status" class="status offline">Offline</div>
+        </header>
+
+        <div id="login-screen" class="screen">
+            <div class="card">
+                <h2>Welcome</h2>
+                <p>Enter your username to start chatting</p>
+                <input type="text" id="username-input" placeholder="e.g. Alex" maxlength="15">
+                <button id="join-btn">Join Chat</button>
+            </div>
+        </div>
+
+        <div id="chat-screen" class="screen hidden">
+            <div id="messages-container">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="input-area">
+                <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off">
+                <button id="send-btn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9L22 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
